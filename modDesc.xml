@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="64">
+	<author>Fetty42</author>
+	<version>1.0.0.0</version>
+	<title>
+        <en>Enter Closest Vehicle</en>
+		<de>Nächstgelegenes Fahrzeug Betreten"</de>
+    </title>
+
+    <description>
+        <de><![CDATA[Wechselt von der aktuellen Position bzw. aus dem aktuellen Fahrzeug in das nächstgelegene Fahrzeug.
+Ist z.B. sehr hilfreich, wenn man zwischen dem Mähdrescher und dem Trecker mit dem Anhänger wechseln möchte.
+Standdard Taste ist ALT links + E]]></de>
+		<en><![CDATA[Switches from the current position or from the current vehicle to the nearest vehicle.
+It is very helpful, for example, when you want to switch between the combine and the tractor with the trailer.
+Default key is ALT left + E]]></en>
+		<fr><![CDATA[Permet de passer de la position actuelle ou du véhicule actuel au véhicule le plus proche.
+C'est très utile, par exemple, pour passer de la moissonneuse-batteuse au tracteur avec sa remorque.
+La touche par défaut est ALT gauche + E]]></fr>
+    </description>
+
+	<iconFilename>icon.dds</iconFilename>
+	<multiplayer supported="true"/>
+	<extraSourceFiles>
+		<sourceFile filename="EnterClosestVehicle.lua"/>
+	</extraSourceFiles>    
+  <actions>
+      <action name="ENTER_CLOSEST_VEHICLE" category="PLAYER VEHICLE" axisType="HALF"/>
+  </actions>	
+  <inputBinding>
+      <actionBinding action="ENTER_CLOSEST_VEHICLE" >
+          <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_e" axisComponent="+" neutralInput="0" index="1"/>
+          <!-- <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_lshift KEY_tab" axisComponent="+" neutralInput="0" index="1"/> -->
+      </actionBinding>
+  </inputBinding>	
+	<l10n>
+		<text name="input_ENTER_CLOSEST_VEHICLE">
+			<en>Enter closest vehicle</en>
+			<de>Nächstgelegenes Fahrzeug betreten</de>
+			<fr>Entrer dans le véhicule le plus proche</fr>
+
+			<!-- <en>Switch to the closest vehicle</en> -->
+			<!-- <de>Zum nächstgelegenen Fahrzeug wechseln</de> -->
+			<!-- <fr>Passer au véhicule le plus proche</fr> -->
+		</text>		
+	</l10n>
+</modDesc>
