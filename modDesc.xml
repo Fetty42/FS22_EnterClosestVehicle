@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="64">
+<modDesc descVersion="80">
 	<author>Fetty42</author>
-	<version>1.0.0.0</version>
+	<version>1.0.1.0</version>
 	<title>
         <en>Enter Closest Vehicle</en>
 		<de>Nächstgelegenes Fahrzeug Betreten"</de>
@@ -11,24 +11,36 @@
         <de><![CDATA[Wechselt von der aktuellen Position bzw. aus dem aktuellen Fahrzeug in das nächstgelegene Fahrzeug.
 Ist z.B. sehr hilfreich, wenn man zwischen dem Mähdrescher und dem Trecker mit dem Anhänger wechseln möchte.
 Standdard Taste ist ALT links + E
-https://github.com/Fetty42/FS22_EnterClosestVehicle]]></de>
+
+Update 1.0.1.0
+- Tastenkürzel funktionierte teilweise nicht
+
+Für Fehlermeldungen oder Anregungen besucht bitte: https://github.com/Fetty42/FS22_EnterClosestVehicle]]></de>
 		<en><![CDATA[Switches from the current position or from the current vehicle to the nearest vehicle.
 It is very helpful, for example, when you want to switch between the combine and the tractor with the trailer.
 Default key is ALT left + E
-https://github.com/Fetty42/FS22_EnterClosestVehicle]]></en>
+
+Update 1.0.1.0
+- Keyboard shortcut did not work in some cases
+
+For error messages or suggestions please visit: https://github.com/Fetty42/FS22_EnterClosestVehicle]]></en>
 		<fr><![CDATA[Permet de passer de la position actuelle ou du véhicule actuel au véhicule le plus proche.
 C'est très utile, par exemple, pour passer de la moissonneuse-batteuse au tracteur avec sa remorque.
 La touche par défaut est ALT gauche + E
-https://github.com/Fetty42/FS22_EnterClosestVehicle]]></fr>
+
+Mise à jour 1.0.1.0
+- Le raccourci clavier ne fonctionnait pas toujours
+
+Pour les messages d'erreur ou les suggestions, veuillez visiter : https://github.com/Fetty42/FS22_EnterClosestVehicle]]></fr>
     </description>
 
-	<iconFilename>icon.dds</iconFilename>
+	<iconFilename>icon_EnterClosestVehicle.dds</iconFilename>
 	<multiplayer supported="true"/>
 	<extraSourceFiles>
 		<sourceFile filename="EnterClosestVehicle.lua"/>
 	</extraSourceFiles>    
   <actions>
-      <action name="ENTER_CLOSEST_VEHICLE" category="PLAYER VEHICLE" axisType="HALF"/>
+      <action name="ENTER_CLOSEST_VEHICLE" category="SYSTEM" axisType="HALF"/>
   </actions>	
   <inputBinding>
       <actionBinding action="ENTER_CLOSEST_VEHICLE" >
